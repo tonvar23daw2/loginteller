@@ -8,13 +8,13 @@
 #include <stdlib.h>    // exit()
 
 int main(){
-    char *szLogin;
+    char *szUserName;
    
-    if((szLogin = getlogin())==NULL){
+    if((szUserName = getlogin())==NULL){
         perror("getlogin");
         exit(EXIT_FAILURE);
     }  
-    printf("Your login name at the system is : %s\n",szLogin);
+    printf("Your login name at the system is : %s\n",szUserName);
 
     return (0);
 }
